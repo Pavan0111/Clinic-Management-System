@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+{% block title %} practitioners {% endblock title %}
+{% block body %}  <div class="container">
+<h2>Practitioners</h2>
+
+    
+
+<div class="container">
+        <div class="row">
+            <div class="col-4 mt-5 mx-auto">
+            <a href="/" class="btn btn-secondary">Back Home</a>
+        </div>
+        <div class="col-4 mt-5 mx-auto">
+            <a href="{% url 'practitioners' %}" class="btn btn-warning">Back To Clinic Staff</a>
+        </div>
+        </div>
+        <div class="col-md-12 mt-5">
+            <div class="jumbotron">
+                <h4 class="display-4 text-center">Add New Staff Member</h4>
+                <form action="" method="post">
+                    {% csrf_token %}
+                   
+                    
+
+</head>
+<body class="">
+<div class="container-fluid mt-5 mx-auto" style="background-color: skyblue;">
+      <center><nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: darkblue;">
+      <a class="navbar-brand" href="/">CLINIC MANAGEMENT SYSTEM</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+</nav>
+</center>
+    
+    
+    
+  
+                    
+
+<div id="div_id_id_number" class="form-group"> <label for="id_id_number" class=" requiredField">
+                Id number<span class="asteriskField">*</span> </label> <div class=""> <input type="text" name="id_number" maxlength="200" class="textinput textInput form-control" required id="id_id_number"> </div> </div> <div id="div_id_name" class="form-group"> <label for="id_name" class=" requiredField">
+                Name<span class="asteriskField">*</span> </label> <div class=""> <input type="text" name="name" maxlength="200" class="textinput textInput form-control" required id="id_name"> </div> </div> <div id="div_id_gender" class="form-group"> <label for="id_gender" class=" requiredField">
+                Gender<span class="asteriskField">*</span> </label> <div class=""> <select name="gender" class="select form-control" required id="id_gender"> <option value="" selected>---------</option> <option value="Male">Male</option> <option value="Female">Female</option>
+
+</select> </div> </div> <div id="div_id_phone" class="form-group"> <label for="id_phone" class=" requiredField">
+                Phone<span class="asteriskField">*</span> </label> <div class=""> <input type="text" name="phone" maxlength="200" class="textinput textInput form-control" required id="id_phone"> </div> </div> <div id="div_id_email" class="form-group"> <label for="id_email" class=" requiredField">
+                Email<span class="asteriskField">*</span> </label> <div class=""> <input type="email" name="email" maxlength="200" class="emailinput form-control" required id="id_email"> </div> </div> <div id="div_id_position" class="form-group"> <label for="id_position" class=" requiredField">
+                Position<span class="asteriskField">*</span> </label> <div class=""> <select name="position" class="select form-control" required id="id_position"> <option value="" selected>---------</option> <option value="Nurse">Nurse</option> <option value="Clinical Officer">Clinical Officer</option> <option value="Public Health Officer">Public Health Officer</option> <option value="Cleaner">Cleaner</option> <option value="Security">Security</option> <option value="Driver">Driver</option> <option value="Counselor">Counselor</option> <option value="Nutritionist">Nutritionist</option>
+
+</select> </div> </div> <div id="div_id_employment_date" class="form-group"> <label for="id_employment_date" class=" requiredField">
+                Employment date<span class="asteriskField">*</span> </label> <div class=""> <input type="text" name="employment_date" class="datetimeinput form-control" required id="id_employment_date"> </div> </div> <div id="div_id_shift" class="form-group"> <label for="id_shift" class=" requiredField">
+                Shift<span class="asteriskField">*</span> </label> <div class=""> <select name="shift" class="select form-control" required id="id_shift"> <option value="" selected>---------</option> <option value="Day">Day</option> <option value="Night">Night</option>
+
+</select> </div> </div>
+
+                    
+                    
+                    </div>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+    
+
+</div>
+    
+                    <br>
+                    <div class="row">
+                        <div class="col-md-8">
+                           <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="{% url 'practitioners' %}" class="btn btn-secondary btn-block btn-lg">
+                                Back to Staff Members
+                            </a>
+                        </div>
+                    </div>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+
+   <div class="col-auto d-none d-lg-block">
+          
+        </div>     
+      </div>
+{% endblock body %}
+
+     
